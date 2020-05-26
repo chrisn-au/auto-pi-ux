@@ -26,9 +26,9 @@ https://www.syncfusion.com/downloads/communitylicense
 
 The sample currently requires auto-pi-testws to porvide test data. 
 
-clone auto-pi-testws
+clone auto-pi-ws
 npm install
-node server.js
+node testserver.js
 
 clone auto-pi-ux
 
@@ -44,5 +44,20 @@ run the web version
 flutter run -d Chrome 
 ```
 
-## Getting Started
+## I need help
 
+It is current a pre pre pre alpha just to demonstrate technical components
+
+I am after help in
+
+1) Creation of a python modelule to replace the auto-pi-ws module. This needs to run on the autopi and publish on a ws data from PIDs and discovery data
+
+As a start the format for the ws message is
+
+{ "pid" : "pid" , value : value}
+
+Discovery message to be described
+
+2) Layout of the dashboards - from very simple (beta versions) to more complex. I indent to be using the SyncFusion package although happy to consider alternatives
+
+Reach out to me if you want to help
