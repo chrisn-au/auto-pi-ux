@@ -15,9 +15,9 @@ class AutoPI {
       channel = IOWebSocketChannel.connect("ws://127.0.0.1:1234"); 
      }
       
-    var stream1 = channel.stream.asBroadcastStream();
+    var autopiStream = channel.stream.asBroadcastStream();
   
-    stream1.listen((message) {  
+    autopiStream.listen((message) {  
       Map<String, dynamic> msg = jsonDecode(message);
       var pid = msg['pid'];
       var _value = msg['value']; 

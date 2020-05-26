@@ -4,7 +4,7 @@ import 'package:syncfusion_flutter_core/core.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
-import './autopi.dart';
+
 
 
 void main() async {
@@ -15,7 +15,7 @@ void main() async {
     return msg['SyncFusionKey'];
   }
   var key = await loadConfig();
-      SyncfusionLicense.registerLicense(key);
+  SyncfusionLicense.registerLicense(key);
   runApp(AutoPIApp());
 } 
 class AutoPIApp extends StatelessWidget {

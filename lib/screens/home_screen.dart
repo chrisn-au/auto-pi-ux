@@ -1,15 +1,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
-import 'package:syncfusion_flutter_core/core.dart';
-import 'dart:async' show Future;
-import 'package:flutter/services.dart' show rootBundle;
-import 'dart:convert';
+
 
 import '../autopi.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen();
+  
   @override
   Widget build(BuildContext context) { 
     return MaterialApp(
@@ -20,17 +18,8 @@ class HomeScreen extends StatelessWidget {
 
 Widget home(BuildContext context) {
   //WidgetsFlutterBinding.ensureInitialized();
+ 
   var autopi = new AutoPI();
-  Future<String> loadAsset() async {
-    var jsonString = await rootBundle.loadString('config.json');
-    Map<String, dynamic> msg = jsonDecode(jsonString);
-    return msg['SyncFusionKey'];
-  }
-  loadAsset().then((value) => 
-        SyncfusionLicense.registerLicense(value)
-  );
- //   print(value);
-  
   return Scaffold(
     body: Center(
       child: Container(
