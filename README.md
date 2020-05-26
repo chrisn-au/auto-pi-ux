@@ -6,15 +6,15 @@ Flutter test local app web/android/ios for AutoPi - very much in pre Alpha - Dem
 ## Environment
 
 Install flutter 
-```
+
 https://flutter.dev/docs/get-started/install
-```
+
 
 enable for web developemnt 
 
-```
+
 https://flutter.dev/docs/get-started/web
-```
+
 
 runs locally (Mac Catalina)- docker config to come
 requires licence key to SyncFusion 
