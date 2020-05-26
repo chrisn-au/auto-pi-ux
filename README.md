@@ -59,7 +59,7 @@ It is currently a pre pre pre alpha just to demonstrate technical components
 
 I am after help in
 
-1) Creation of a python modelule to replace the auto-pi-ws module. This needs to run on the autopi and publish on a ws data from PIDs and discovery data
+1) Creation of a python module to replace the auto-pi-ws module. This needs to run on the autopi and publish on a ws data from PIDs and discovery data
 
 As a start the format for the ws message is
 
