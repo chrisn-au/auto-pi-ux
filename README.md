@@ -63,7 +63,7 @@ I am after help in
 
 As a start the format for the ws message is
 
-{ "pid" : "pid" , value : value}
+{ "pid" : "pid" , "value" : value}
 
 Discovery message to be described
 
