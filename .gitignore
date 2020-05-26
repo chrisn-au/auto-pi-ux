@@ -30,6 +30,7 @@
 .pub/
 /build/
 /assets/config.josn
+/cn-config/
 
 # Web related
 lib/generated_plugin_registrant.dart
