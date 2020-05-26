@@ -17,7 +17,8 @@ https://flutter.dev/docs/get-started/web
 
 
 runs locally (Mac Catalina)- docker config to come
-requires licence key to SyncFusion 
+
+It currently requires licence key to SyncFusion which can be got for free from 
 
 https://www.syncfusion.com/downloads/communitylicense
 
@@ -27,8 +28,16 @@ https://www.syncfusion.com/downloads/communitylicense
 The sample currently requires auto-pi-testws to porvide test data. 
 
 clone auto-pi-ws
+
+```
 npm install
+````
+
+````
 node testserver.js
+````
+
+This simply runs a trivial node ws server to push trivial test data
 
 clone auto-pi-ux
 
@@ -46,7 +55,7 @@ flutter run -d Chrome
 
 ## I need help
 
-It is current a pre pre pre alpha just to demonstrate technical components
+It is currently a pre pre pre alpha just to demonstrate technical components
 
 I am after help in
 
