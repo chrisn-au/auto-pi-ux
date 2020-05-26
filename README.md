@@ -1,17 +1,48 @@
-# autopi_app
+# autopi_pi-ux
 
-A new Flutter project.
+Flutter test local app web/android/ios for AutoPi - very much in pre Alpha - Demonstrate capabiity
+
+
+## Environment
+
+Install flutter 
+```
+https://flutter.dev/docs/get-started/install
+```
+
+enable for web developemnt 
+
+```
+https://flutter.dev/docs/get-started/web
+```
+
+runs locally (Mac Catalina)- docker config to come
+requires licence key to SyncFusion 
+
+https://www.syncfusion.com/downloads/communitylicense
+
+
+## Setup
+
+The sample currently requires auto-pi-testws to porvide test data. 
+
+clone auto-pi-testws
+npm install
+node server.js
+
+clone auto-pi-ux
+
+create file assets/config.json
+
+{
+    "SyncFusionKey" : "yourkey"
+}
+
+run the web version
+
+```
+flutter run -d Chrome 
+```
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# auto-pi-ux
