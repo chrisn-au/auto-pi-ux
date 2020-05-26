@@ -25,7 +25,7 @@ https://www.syncfusion.com/downloads/communitylicense
 
 ## Setup
 
-The sample currently requires auto-pi-testws to porvide test data. 
+The sample currently requires auto-pi-ws to porvide test data. 
 
 clone auto-pi-ws
 
