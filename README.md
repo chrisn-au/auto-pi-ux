@@ -41,7 +41,7 @@ This simply runs a trivial node ws server to push trivial test data
 
 clone auto-pi-ux
 
-create file assets/config.json
+create file assets/config.json from assets/config.sample
 
 {
     "SyncFusionKey" : "yourkey"
