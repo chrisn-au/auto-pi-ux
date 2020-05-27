@@ -53,6 +53,16 @@ run the web version
 flutter run -d Chrome 
 ```
 
+
+## Installing dcoker onto the pi3.
+For thos with a PI 3 and wanting to install docker (for ease of testing) I suggest this link is a great help
+
+I chose the option to install the deb packages. Not it failed on the third deb the first time for me. I rebooted and it worked fine
+
+https://blog.alexellis.io/how-to-fix-docker-for-raspbian-buster/
+
+
+
 ## I need help
 
 It is currently a pre pre pre alpha just to demonstrate technical components
