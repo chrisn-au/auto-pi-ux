@@ -36,7 +36,10 @@ class AutoPI {
 
     });
   }
-  
+  close(){
+    _controller0.close();
+    _controller1.close();
+  } 
   final _controller0 = StreamController<int>.broadcast();
   final _controller1 = StreamController<int>.broadcast();
 

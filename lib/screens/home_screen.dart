@@ -1,9 +1,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
-
-
 import '../autopi.dart';
+
+// Initially a page for each layout - Can replace widgets at build time
+// A widget will know about it self (number of fields and how to populate) but the layout controller 
+// will ned to know number of fields and position. It will pass PI and position to the widget
 
 class HomeScreen extends StatelessWidget {
   HomeScreen();
@@ -17,13 +19,12 @@ class HomeScreen extends StatelessWidget {
 }
 
 Widget home(BuildContext context) {
-  //WidgetsFlutterBinding.ensureInitialized();
- 
-  var autopi = new AutoPI();
+var autopi = new AutoPI();
   return Scaffold(
     body: Center(
       child: Container(
         child : new Column(
+           
           children : [ twoAxis(context,autopi),
                       oneAxis(context,autopi),
           ])
