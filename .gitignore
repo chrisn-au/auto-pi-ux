@@ -29,7 +29,7 @@
 .pub-cache/
 .pub/
 /build/ios/
-/assets/
+/assets/config.json
 /cn-config/
 
 # Web related
