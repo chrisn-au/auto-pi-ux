@@ -10,9 +10,13 @@ import 'dart:convert';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Future<String> loadConfig() async {
+    try {
     var jsonString = await rootBundle.loadString('config.json');
     Map<String, dynamic> msg = jsonDecode(jsonString);
     return msg['SyncFusionKey'];
+    } catch (error){
+      return "";
+    }  
   }
   var key = await loadConfig();
   SyncfusionLicense.registerLicense(key);
