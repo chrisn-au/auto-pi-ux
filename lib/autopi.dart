@@ -1,20 +1,22 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:web_socket_channel/io.dart';
-import 'package:web_socket_channel/status.dart' as status;
-import 'package:web_socket_channel/html.dart';
+
+
+import 'ws.dart'
+    if (dart.library.html) 'ws-html.dart'
+    if (dart.library.io) 'ws-io.dart';
 
 
 class AutoPI {
   AutoPI() {
     var channel;
-    if(kIsWeb)
-      channel = HtmlWebSocketChannel.connect("ws://127.0.0.1:1234"); 
-    else {
-      channel = IOWebSocketChannel.connect("ws://127.0.0.1:1234"); 
-     }
-      
+    // if(kIsWeb)
+    //   channel = HtmlWebSocketChannel.connect("ws://127.0.0.1:1234"); 
+    // else {
+    //   channel = IOWebSocketChannel.connect("ws://127.0.0.1:1234"); 
+    //  }
+
+    channel = initializeWebSocketChannel("ws://127.0.0.1:1234");  
     var autopiStream = channel.stream.asBroadcastStream();
   
     autopiStream.listen((message) {  
